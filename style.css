@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #272640;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #cbc5d1;
+}
+
+.password-display-box {
+  position: relative;
+  width: 400px;
+}
+.password-display-box input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  background-color: #0b525b;
+  color: #dae53d;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px #58077d;
+}
+
+::placeholder {
+  color: #ae9736;
+}
+
+.password-display-box span {
+  scale: 0;
+  position: absolute;
+  top: -35px;
+  left: -30px;
+  padding: 5px 20px;
+  font-size: 15px;
+  border-radius: 30px;
+  color: #ffe53d;
+  background-color: #58077d;
+  transform-origin: bottom;
+  transition: all 0.2s ease-in-out;
+}
+
+.password-display-box button {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  background-color: transparent;
+  border: none;
+}
+
+.password-display-box i {
+  color: #95d5b2;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container-2 {
+  background-color: #1b3a4b;
+  width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px #58077d;
+}
+
+.pass-len-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+#len-num {
+  color: #ffe53d;
+}
+
+.slider {
+  appearance: none;
+  height: 10px;
+  background-color: #849687;
+  background-image: linear-gradient(#d8f3dc, #d8f3dc);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #40916c;
+  box-shadow: 0 0 2px 1px #081c15;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  border: 2px solid #081c15;
+}
+
+#uppercase,
+#lowercase,
+#numbers,
+#symbols {
+  accent-color: #00e0d1;
+  height: 20px;
+  width: 20px;
+}
+
+.pass-strength {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pass-strength p {
+  font-size: 1.3rem;
+}
+
+.check {
+  appearance: none;
+  background-color: #0b525b;
+  border: 1px solid white;
+  border-radius: 30%;
+  cursor: pointer;
+  position: relative;
+}
+
+.check:checked {
+  background-color: #13b0c4;
+}
+
+.check:checked::before {
+  content: "✔";
+  font-size: 18px;
+  position: absolute;
+  transform: translateX(20%) translateY(-20%);
+  font-weight: 800;
+  color: #272640;
+}
+
+label {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.pass-strength div {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  box-shadow: 0 0 12px 1px #cccccc;
+}
+
+.generate-pass-btn {
+  margin: 0 auto;
+  width: fit-content;
+  background-color: #006466;
+  color: #ffe53d;
+  font-size: 1.3rem;
+  padding: 10px 70px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px #3e1f47;
+  border: none;
+  white-space: nowrap;
+}
